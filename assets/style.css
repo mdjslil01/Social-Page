@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+body {
+    background: var(--Grey900);
+    color: var(--White);
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+}
+
+.card {
+    width: 375px;
+    background: var(--Grey800);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile>img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--Green);
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: var(--Grey700);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+a:last-child {
+    margin-bottom: 0%;
+}
+
+a:hover {
+    background: var(--Green);
+    color: var(--Grey900);
+}
+
+@media only screen and (max-width:375px) {
+    .card {
+        width: 90%;
+    }
+}
